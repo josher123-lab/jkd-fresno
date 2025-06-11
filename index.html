@@ -6,30 +6,20 @@
   <title>JKD Fresno Academy</title>
   <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="style.css" />
+  <script defer src="checkin.js"></script>
 </head>
 <body>
   <div id="app">
     <h1>JKD Fresno Academy</h1>
     <p>"Absorb what is useful. Reject what is useless. Add what is uniquely your own."</p>
     <ul>
-      <li><a href="#schedule">Schedule</a></li>
       <li><a href="#videos">Video Library</a></li>
       <li><a href="#support">Support the Academy</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#checkin">Student Check-In</a></li>
     </ul>
-
-    <section id="schedule">
-      <h2>Class Schedule</h2>
-      <ul>
-        <li>Monday – JKD Fundamentals</li>
-        <li>Tuesday – Sparring Drills</li>
-        <li>Wednesday – Forms & Mobility</li>
-        <li>Thursday – JKD Concepts</li>
-        <li>Friday – Flow Drills</li>
-      </ul>
-    </section>
 
     <section id="videos">
       <h2>Video Library</h2>
@@ -76,6 +66,23 @@
         <strong>– Francisco Alvarez</strong>
       </div>
     </section>
-  </div>
+
+    <section id="checkin">
+      <h2>Student Check-In</h2>
+      <form id="checkinForm">
+        <input type="text" id="studentName" placeholder="Student Name" required />
+        <input type="text" id="classType" placeholder="Class Type (optional)" />
+        <button type="submit">Check In</button>
+      </form>
+      <ul id="checkinList"></ul>
+    </section>
+  
+    <section id="install">
+      <h2>Install the App</h2>
+      <button id="installBtn" style="display:none;">Install App</button>
+    </section>
+
+</div>
+<script src='install.js'></script>
 </body>
 </html>
