@@ -10,9 +10,23 @@
 <body>
   <div id="app">
     <img src="homepage_logo.png" alt="JKD Logo" class="logo-animate" style="max-width: 300px; display: block; margin: 0 auto 20px;" />
-    <a href="https://josher123-lab.github.io/jkd-fresno" target="_blank" rel="noopener noreferrer">
+    
+<audio id="clickSound" preload="auto">
+  <source src="click.mp3" type="audio/mpeg">
+</audio>
+<a href="https://josher123-lab.github.io/jkd-fresno" target="_blank" rel="noopener noreferrer" onclick="playClickSound()">
+  <img src="open_jkd_fresno.png" alt="Open JKD Fresno App" style="width: 200px; display: block; margin: 20px auto;" />
+</a>
+
       <img src="open_jkd_fresno.png" alt="Open JKD Fresno App" style="width: 200px; display: block; margin: 20px auto;" />
     </a>
   </div>
+
+<script>
+  function playClickSound() {
+    var audio = document.getElementById('clickSound');
+    audio.play();
+  }
+</script>
 </body>
 </html>
